@@ -14,4 +14,8 @@ public interface consultationMapper {
     List<consultation> getByName(String nom_utilisateur);
 
     void insert(consultation con);
+
+    void update(consultation consult);
+
+    void delete(int matricule);
 }

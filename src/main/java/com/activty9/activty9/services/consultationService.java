@@ -10,10 +10,33 @@ import java.util.List;
 public class consultationService {
     @Autowired
     consultationMapper cMapper;
-    public List<consultation> getAll(){
+    public List<consultation> getAllConsultations(){
+
         return cMapper.getAll();
     }
+
     public consultation getConsultationById(int id) {
+
         return cMapper.getById(id);
+    }
+
+    public List<consultation> getConsultationByName(String nom_utilisateur) {
+        return cMapper.getByName(nom_utilisateur);
+    }
+
+
+    public void createConsultation(consultation consult) {
+
+        cMapper.insert(consult);
+    }
+
+    public void updateConsultation(consultation consult) {
+
+        cMapper.update(consult);
+    }
+
+    public void deleteConsultation(int matricule) {
+
+        cMapper.delete(matricule);
     }
 }

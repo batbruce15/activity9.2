@@ -9,9 +9,14 @@ import java.util.List;
 @Mapper
 public interface traitementMapper {
     List<traitement> getAll();
+
     traitement getById(int id);
 
     List<traitement> getByName(String nom_utilisateur);
 
     void insert(traitement trai);
+
+    void update(traitement trai);
+
+    void delete(int matricule);
 }
