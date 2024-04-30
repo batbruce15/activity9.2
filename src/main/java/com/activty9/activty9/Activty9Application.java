@@ -19,8 +19,8 @@ public class Activty9Application {
 //	@Autowired
 //	private patientMapper pMapper;
 
-	@Autowired
-	private consultationMapper cMapper;
+//	@Autowired
+//	private consultationMapper cMapper;
 	public static void main(String[] args) {
 		SpringApplication.run(Activty9Application.class, args);
 	}
