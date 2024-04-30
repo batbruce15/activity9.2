@@ -9,13 +9,9 @@ import java.util.List;
 @Mapper
 public interface patientMapper {
     List<patient> getAll();
-
     patient getById(int id);
-
     List<patient> getByName(String nom_utilisateur);
-
     void insert(patient pat);
     void update(patient pat);
-
     void delete(int matricule);
 }
