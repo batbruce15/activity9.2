@@ -15,9 +15,9 @@ import java.util.List;
 import java.util.stream.Stream;
 
 @SpringBootApplication
-public class Activty9Application implements CommandLineRunner {
-	@Autowired
-	private patientMapper pMapper;
+public class Activty9Application {
+//	@Autowired
+//	private patientMapper pMapper;
 
 	@Autowired
 	private consultationMapper cMapper;
